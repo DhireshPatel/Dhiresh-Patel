@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.Hero {
+  width: 100%;
+  max-width: 1699px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+  padding: 130px 80px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: auto;
+  gap: 80px;
+}
+
+.Hero_Left {
+  max-width: 650px;
+}
+
+.Hero_Top_name {
+  font-size: 36px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.Hero_Frontend_developer {
+  font-size: 90px;
+  line-height: 0.95;
+  font-weight: 800;
+  color: #20242d;
+  margin-bottom: 25px;
+  letter-spacing: -3px;
+}
+
+.Hero_Frontend_developer span {
+  color: #6d28d9;
+}
+
+.Hero_Description {
+  font-size: 28px;
+  color: #70757f;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.btnDark {
+  background: #1f2430;
+  color: white;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnDark:hover {
+  transform: translateY(-3px);
+}
+
+.btnLight {
+  background: white;
+  color: #222;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnLight:hover {
+  transform: translateY(-3px);
+}
+
+.imageCircle1 {
+  width: 430px;
+  height: 430px;
+  border: 2px solid rgba(130, 80, 255, 0.25);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageCircle2 {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Profile_Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+  .Hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 25px;
+  }
+
+  .Hero_Frontend_developer {
+    font-size: 60px;
+  }
+
+  .Hero_Description {
+    font-size: 20px;
+  }
+
+  .heroButtons {
+    justify-content: center;
+  }
+
+  .imageCircle1 {
+    width: 320px;
+    height: 320px;
+  }
+
+  .imageCircle2 {
+    width: 250px;
+    height: 250px;
+  }
+}

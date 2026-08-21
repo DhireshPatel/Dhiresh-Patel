@@ -1,0 +1,146 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: fixed;
+  z-index: 999;
+}
+
+.navLogo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+.navLogo span {
+  color: #7c3aed; /* Purple dot */
+}
+
+.navLi {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.navLi a {
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navLi a:hover {
+  color: #7c3aed;
+}
+
+.navLi a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #7c3aed;
+  transition: 0.3s;
+}
+
+.navLi a:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+.navLi .active {
+  color: #7c3aed;
+}
+
+/* ========================= */
+/* Responsive Navbar */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  nav {
+    padding: 0 40px;
+  }
+
+  .navLogo {
+    font-size: 24px;
+  }
+
+  .navLi {
+    gap: 25px;
+  }
+
+  .navLi a {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navLogo {
+    font-size: 24px;
+  }
+
+  .navLi {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navLi a {
+    font-size: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  nav {
+    padding: 15px;
+  }
+
+  .navLogo {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .navLi {
+    gap: 15px;
+  }
+
+  .navLi a {
+    font-size: 15px;
+  }
+}

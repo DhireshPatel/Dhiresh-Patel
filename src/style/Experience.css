@@ -1,0 +1,167 @@
+.experience {
+  width: 100%;
+  padding: 100px 8%;
+}
+
+.experienceTitle {
+  font-size: 72px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 60px;
+}
+
+.experienceTitle span {
+  color: #7c3aed;
+}
+
+.experienceContainer {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 70px;
+}
+
+/* LEFT */
+
+.companyList {
+  border-left: 3px solid #d7d7d7;
+}
+
+.companyList button {
+  width: 100%;
+  background: none;
+  border: none;
+
+  text-align: left;
+
+  padding: 18px 30px;
+
+  font-size: 28px;
+
+  color: #7a7a7a;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.companyList button:hover {
+  color: #7c3aed;
+}
+
+.activeCompany {
+  color: #7c3aed !important;
+
+  border-left: 4px solid #7c3aed;
+
+  margin-left: -3px;
+
+  font-weight: 600;
+}
+
+/* RIGHT */
+
+.experienceContent h2 {
+  font-size: 38px;
+
+  color: #222;
+}
+
+.experienceContent h2 span {
+  color: #7c3aed;
+}
+
+.date {
+  margin: 12px 0 45px;
+
+  color: #777;
+
+  font-size: 18px;
+}
+
+.workList {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.workItem {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+}
+
+.workItem svg {
+  color: #7c3aed;
+
+  flex-shrink: 0;
+
+  margin-top: 4px;
+}
+
+.workItem p {
+  font-size: 20px;
+
+  color: #555;
+
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .experience {
+    padding: 70px 25px;
+  }
+
+  .experienceTitle {
+    font-size: 52px;
+  }
+
+  .experienceContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .companyList {
+    display: flex;
+
+    overflow-x: auto;
+
+    border: none;
+
+    gap: 15px;
+
+    padding-bottom: 20px;
+  }
+
+  .companyList button {
+    white-space: nowrap;
+
+    border-radius: 10px;
+
+    background: #f5f5f5;
+
+    padding: 12px 20px;
+
+    font-size: 18px;
+  }
+
+  .activeCompany {
+    border: none;
+
+    margin: 0;
+
+    background: #7c3aed !important;
+
+    color: #fff !important;
+  }
+
+  .experienceContent h2 {
+    font-size: 30px;
+  }
+
+  .workItem p {
+    font-size: 17px;
+  }
+}
