@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Study Space SaaS",
     category: "Next.js",
-    image: "public/images/librarySaaS.png",
+    image: "/images/librarySaaS.png",
     description:
       "Complete Library management system with admin dashboard, student management and analytics.",
     tech: ["Next.js", "Supabase", "Node.js"],
@@ -19,11 +19,11 @@ const projects = [
   {
     id: 2,
     title: "Dr. Ketul Kumawat",
-    category: "React",
+    category: "Next.js",
     image: "/images/KetulSir.png",
     description:
       "Modern responsive portfolio with animations and contact form.",
-    tech: ["React", "CSS", "Framer Motion"],
+    tech: ["Next.js", "Supabase", "Node.js"],
     github: "https://github.com/DhireshPatel/ketulkumawat",
     live: "https://ketulkumawat.com",
     featured: false,
@@ -35,7 +35,7 @@ const projects = [
     image: "/images/my-fix.png",
     description:
       "Electrician services booking web page with all electrical services",
-    tech: ["JavaScript", "HTML", "CSS"],
+    tech: ["Next.js", "Supabase", "Node.js"],
     github: "https://github.com/DhireshPatel/new-service-booking",
     live: "https://new-service-booking.vercel.app/",
     featured: false,
@@ -77,11 +77,23 @@ const projects = [
   },
   {
     id: 7,
+    title: "Apex Classes Demo",
+    category: "Next.js",
+    image: "/images/apexclasses.png",
+    description:
+      "Demo Website for Apex Classes & rejected 😎",
+    tech: ["JavaScript", "HTML", "CSS"],
+    github: "https://github.com/DhireshPatel/Service-Booking",
+    live: "https://apex-classes-kudi.vercel.app/",
+    featured: false,
+  },
+  {
+    id: 8,
     title: "Rishi Enterprises",
     category: "Next.js",
     image: "/images/rishienterprises.png",
     description:
-      "Electrician services booking web page with all electrical services",
+      "The Store for Rishi Furniture and Electronics",
     tech: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/DhireshPatel/Rishizone",
     live: "https://rishizone1.vercel.app/",
